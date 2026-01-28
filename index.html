@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Quản lý học phần</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Quản lý học phần</h1>
+
+    <form id="addForm" class="card">
+        <input id="course" placeholder="Tên học phần"/>
+        <input id="credit" type="number" placeholder="Tín chỉ"/>
+        <input id="score" type="number" step="0.1" placeholder="Điểm"/>
+        <input id="semester" placeholder="Học kỳ"/>
+        <button>Thêm</button>
+    </form>
+
+    <div class="card">
+        <h2>Kết quả</h2>
+        <div id="list"></div>
+        <div id="gpa" class="gpa-box"></div>
+    </div>
+</div>
+
+<script type="module" src="firebase.js"></script>
+<script type="module" src="app.js"></script>
+</body>
+</html>
